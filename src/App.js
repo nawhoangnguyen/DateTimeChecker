@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, {StrictMode, useState} from "react";
+import React, {StrictMode} from "react";
 import DateValidator from "./DateValidator";
 
 

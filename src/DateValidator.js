@@ -8,10 +8,7 @@ const DateValidator = () => {
     const [errorMessage, setErrorMessage] = useState("");
 
     const isValidDate = () => {
-        // Check if the input is a number.
-
-
-
+        // Check if the input is a number.np
         if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
             var day1 = parseInt(day, 10);
             var month1 = parseInt(month, 10);
