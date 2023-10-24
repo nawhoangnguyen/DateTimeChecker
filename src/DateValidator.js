@@ -16,8 +16,12 @@ const DateValidator = () => {
             var year1 = parseInt(year, 10);
 
             // Check if the day is in the valid range.
+
+            // Change this
+            // if (day < 1 || day > 31) {
             if (day < 1 || day > 31) {
-                setErrorMessage("Day must be between 1 and 31.");
+                setErrorMessage("Day must be between 1 and 32.");
+                // setErrorMessage("Day must be between 1 and 31.");
                 return;
             }
             if (day1 > 0 && day1 < 10) day1 = "0" + day1;
@@ -32,6 +36,7 @@ const DateValidator = () => {
             // Check if the year is in the valid range.
             if (year1 < 1000 || year1 > 3000) {
                 setErrorMessage("Year must be between 1000 and 3000.");
+
                 return;
             }
 
