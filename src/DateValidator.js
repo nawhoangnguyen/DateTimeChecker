@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import validator from "validator";
 
 const DateValidator = () => {
-    const [day, setDay] = useState("");
-    const [month, setMonth] = useState("");
-    const [year, setYear] = useState("");
-    const [errorMessage, setErrorMessage] = useState("");
+    // const [day, setDay] = useState("");
+    // const [month, setMonth] = useState("");
+    // const [year, setYear] = useState("");
+    // const [errorMessage, setErrorMessage] = useState("");
 
     const isValidDate = () => {
-        // Check if the input is a number.np
+        // Check if the input is a number.
+
         if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
             var day1 = parseInt(day, 10);
             var month1 = parseInt(month, 10);
@@ -53,26 +54,26 @@ const DateValidator = () => {
     return (
         <div>
             <h1>Date Validator</h1>
-            <input
+            Day: <input
                 type="text"
                 placeholder="Day"
                 value={day}
                 onChange={(e) => setDay(e.target.value)}
-            />
-            <input
+            /><br/>
+            Month: <input
                 type="text"
                 placeholder="Month"
                 value={month}
                 onChange={(e) => setMonth(e.target.value)}
-            />
-            <input
+            /><br/>
+            Year: <input
                 type="text"
                 placeholder="Year"
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
-            />
+            /><br/>
             <button onClick={isValidDate}>Check</button>
-            <p style={{ color: "red" }}>{errorMessage}</p>
+            <p style={{ color: "red" }}  data-testid={"error"}>{errorMessage}</p>
         </div>
     );
 };
