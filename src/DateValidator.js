@@ -66,7 +66,7 @@ const DateValidator = () => {
             alignItems: 'center'
         }}>
             <div style={{display:'flex',justifyContent:'center'}}>
-                <img style={{width:'30%'}} src={img}/>
+                <img style={{width:'30%'}} src={img} alt={"logo"}/>
             </div>
             <table style={{width: '50%', boxShadow: '0 0 10px 10px #888888', padding: '20px', marginTop: '70px'}}>
                 <caption style={{backgroundColor:'#ccc'}}><h1>Date time checker</h1></caption>
