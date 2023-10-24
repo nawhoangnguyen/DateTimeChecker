@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import validator from "validator";
 
 const DateValidator = () => {
-    // const [day, setDay] = useState("");
-    // const [month, setMonth] = useState("");
-    // const [year, setYear] = useState("");
-    // const [errorMessage, setErrorMessage] = useState("");
+    const [day, setDay] = useState("");
+    const [month, setMonth] = useState("");
+    const [year, setYear] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
     const isValidDate = () => {
         // Check if the input is a number.
