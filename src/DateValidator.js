@@ -115,6 +115,7 @@ const DateValidator = () => {
                     </td>
                 </tr>
                 <tr>
+
                     <td></td>
                     <td style={{display:'flex', justifyContent:'center'}}>
                         <button style={{padding: '20px 60px'}} onClick={isValidDate}>Check</button>
