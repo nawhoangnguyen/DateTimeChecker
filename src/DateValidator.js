@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import validator from "validator";
+import img from "./logo.png"
 
 const DateValidator = () => {
     const [day, setDay] = useState("");
@@ -9,7 +10,7 @@ const DateValidator = () => {
 
     const isValidDate = () => {
         // Check if the input is a number.
-    //
+        //
         if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
             var day1 = parseInt(day, 10);
             var month1 = parseInt(month, 10);
@@ -57,28 +58,71 @@ const DateValidator = () => {
     };
 
     return (
-        <div>
-            <h1>Date Validator</h1>
-            Day: <input
-                type="text"
-                placeholder="Day"
-                value={day}
-                onChange={(e) => setDay(e.target.value)}
-            /><br/>
-            Month: <input
-                type="text"
-                placeholder="Month"
-                value={month}
-                onChange={(e) => setMonth(e.target.value)}
-            /><br/>
-            Year: <input
-                type="text"
-                placeholder="Year"
-                value={year}
-                onChange={(e) => setYear(e.target.value)}
-            /><br/>
-            <button onClick={isValidDate}>Check</button>
-            <p style={{ color: "red" }}  data-testid={"error"}>{errorMessage}</p>
+        <div style={{
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}>
+            <div style={{display:'flex',justifyContent:'center'}}>
+                <img style={{width:'30%'}} src={img}/>
+            </div>
+            <table style={{width: '50%', boxShadow: '0 0 10px 10px #888888', padding: '20px', marginTop: '70px'}}>
+                <caption style={{backgroundColor:'#ccc'}}><h1>Date time checker</h1></caption>
+
+                <tr>
+                    <td>
+                        <h3>Day: </h3>
+                    </td>
+                    <td style={{display: 'flex', flexWrap: 'wrap'}}>
+                        <input
+                            style={{width: '100%', padding: '20px'}}
+                            type="text"
+                            placeholder="Day"
+                            value={day}
+                            onChange={(e) => setDay(e.target.value)}
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>Month: </h3>
+                    </td>
+                    <td style={{display: 'flex', flexWrap: 'wrap'}}>
+                        <input
+                            style={{width: '100%', padding: '20px'}}
+                            type="text"
+                            placeholder="Month"
+                            value={month}
+                            onChange={(e) => setMonth(e.target.value)}
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Year: </h3>
+                    </td>
+                    <td style={{display: 'flex', flexWrap: 'wrap'}}>
+                        <input
+                            style={{width: '100%', padding: '20px'}}
+                            type="text"
+                            placeholder="Year"
+                            value={year}
+                            onChange={(e) => setYear(e.target.value)}
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style={{display:'flex', justifyContent:'center'}}>
+                        <button style={{padding: '20px 60px'}} onClick={isValidDate}>Check</button>
+                    </td>
+                </tr>
+
+            </table>
+            <h1 style={{color: "red"}} data-testid={"error"}>{errorMessage}</h1>
         </div>
     );
 };
