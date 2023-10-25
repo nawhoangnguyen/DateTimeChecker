@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import validator from "validator";
-import img from "./logo.png"
 
 const DateValidator = () => {
     const [day, setDay] = useState("");
