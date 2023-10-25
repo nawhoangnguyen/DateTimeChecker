@@ -64,7 +64,6 @@ describe("DateValidator Component", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
-
   test("Valid date alert is displayed", () => {
     const { getByText, getByTestId, getByPlaceholderText } = render(<DateValidator />);
 
