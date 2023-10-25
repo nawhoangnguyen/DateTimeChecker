@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/DateTimeChecker/static/css/main.073c9b0a.css",
-    "main.js": "/DateTimeChecker/static/js/main.e7bac417.js",
+    "main.js": "/DateTimeChecker/static/js/main.ef0841c7.js",
     "static/js/787.553f10e1.chunk.js": "/DateTimeChecker/static/js/787.553f10e1.chunk.js",
-    "static/media/logo.png": "/DateTimeChecker/static/media/logo.c66db6b68763690eea8f.png",
     "index.html": "/DateTimeChecker/index.html",
     "main.073c9b0a.css.map": "/DateTimeChecker/static/css/main.073c9b0a.css.map",
-    "main.e7bac417.js.map": "/DateTimeChecker/static/js/main.e7bac417.js.map",
+    "main.ef0841c7.js.map": "/DateTimeChecker/static/js/main.ef0841c7.js.map",
     "787.553f10e1.chunk.js.map": "/DateTimeChecker/static/js/787.553f10e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e7bac417.js"
+    "static/js/main.ef0841c7.js"
   ]
 }
