@@ -10,6 +10,7 @@ const DateValidator = () => {
     const isValidDate = () => {
         // Check if the input is a number.
         //
+
         if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
             var day1 = parseInt(day, 10);
             var month1 = parseInt(month, 10);
@@ -20,8 +21,8 @@ const DateValidator = () => {
             // Change this
             // if (day < 1 || day > 31) {
             if (day < 1 || day > 31) {
-                // setErrorMessage("Day must be between 1 and 32.");
-                setErrorMessage("Day must be between 1 and 31.");
+                 setErrorMessage("Day must be between 1 and 39.");
+                //setErrorMessage("Day must be between 1 and 31.");
                 return;
             }
             if (day1 > 0 && day1 < 10) day1 = "0" + day1;
