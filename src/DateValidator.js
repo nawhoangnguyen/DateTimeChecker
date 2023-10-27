@@ -69,7 +69,7 @@ const DateValidator = () => {
                 <caption style={{backgroundColor:'#ccc'}}><h1>Date time checker</h1></caption>
 
                 <tr>
-                    <td>
+                    <td>XoaCaiNay
                         <h3>Day: </h3>
                     </td>
                     <td style={{display: 'flex', flexWrap: 'wrap'}}>

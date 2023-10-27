@@ -7,6 +7,7 @@ import DateValidator from "./DateValidator";
 
 function App() {
   return (
+    
     <StrictMode>
     <DateValidator/>
     </StrictMode>
