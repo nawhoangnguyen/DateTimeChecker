@@ -71,9 +71,7 @@ const DateValidator = () => {
                 <caption style={{backgroundColor:'#ccc', border: '1px solid #444'}}><h1>Date time checker</h1></caption>
 
                 <tr>
-
-
-                    <td>Xoa Cai Nay
+                    <td>
                         <h3>Day </h3>
                     </td>
                     <td style={{display: 'flex', flexWrap: 'wrap'}}>
