@@ -69,7 +69,7 @@ const DateValidator = () => {
             <table style={{width: '50%',  padding: '20px', marginTop: '70px',   border: '1px solid #444'
               }}>
                 <caption style={{backgroundColor:'#ccc', border: '1px solid #444'}}><h1>Date time checker</h1></caption>
-
+<tbody>
                 <tr>
                     <td>
                         <h3>Day </h3>
@@ -78,7 +78,7 @@ const DateValidator = () => {
                         <input
                             style={{width: '100%', padding: '20px'}}
                             type="text"
-                            placeholder="Input Day"
+                            placeholder="Day"
                             value={day}
                             onChange={(e) => setDay(e.target.value)}
                         />
@@ -93,7 +93,7 @@ const DateValidator = () => {
                         <input
                             style={{width: '100%', padding: '20px'}}
                             type="text"
-                            placeholder="Input Month"
+                            placeholder="Month"
                             value={month}
                             onChange={(e) => setMonth(e.target.value)}
                         />
@@ -107,7 +107,7 @@ const DateValidator = () => {
                         <input
                             style={{width: '100%', padding: '20px'}}
                             type="text"
-                            placeholder="Input Year"
+                            placeholder="Year"
                             value={year}
                             onChange={(e) => setYear(e.target.value)}
                         />
@@ -120,6 +120,7 @@ const DateValidator = () => {
                         <button style={{padding: '20px 60px'}} onClick={isValidDate}>Check</button>
                     </td>
                 </tr>
+</tbody>
 
             </table>
             <h1 style={{color: "red"}} data-testid={"error"}>{errorMessage}</h1>
