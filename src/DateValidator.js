@@ -21,8 +21,8 @@ const DateValidator = () => {
             // Change this
             // if (day < 1 || day > 31) {
             if (day < 1 || day > 31) {
-                 setErrorMessage("Day must be between 1 and 39.");
-                // setErrorMessage("Day must be between 1 and 31.");
+                 // setErrorMessage("Day must be between 1 and 39.");
+                setErrorMessage("Day must be between 1 and 31.");
                 return;
             }
             if (day1 > 0 && day1 < 10) day1 = "0" + day1;
