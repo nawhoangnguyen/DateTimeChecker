@@ -62,21 +62,25 @@ const DateValidator = () => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+
         }}>
 
-            <table style={{width: '50%', boxShadow: '0 0 10px 10px #888888', padding: '20px', marginTop: '70px'}}>
-                <caption style={{backgroundColor:'#ccc'}}><h1>Date time checker</h1></caption>
+            <table style={{width: '50%',  padding: '20px', marginTop: '70px',   border: '1px solid #444'
+              }}>
+                <caption style={{backgroundColor:'#ccc', border: '1px solid #444'}}><h1>Date time checker</h1></caption>
 
                 <tr>
-                    <td>XoaCaiNay
-                        <h3>Day: </h3>
+
+
+                    <td>Xoa Cai Nay
+                        <h3>Day </h3>
                     </td>
                     <td style={{display: 'flex', flexWrap: 'wrap'}}>
                         <input
                             style={{width: '100%', padding: '20px'}}
                             type="text"
-                            placeholder="Day"
+                            placeholder="Input Day"
                             value={day}
                             onChange={(e) => setDay(e.target.value)}
                         />
@@ -85,13 +89,13 @@ const DateValidator = () => {
 
                 <tr>
                     <td>
-                        <h3>Month: </h3>
+                        <h3>Month </h3>
                     </td>
                     <td style={{display: 'flex', flexWrap: 'wrap'}}>
                         <input
                             style={{width: '100%', padding: '20px'}}
                             type="text"
-                            placeholder="Month"
+                            placeholder="Input Month"
                             value={month}
                             onChange={(e) => setMonth(e.target.value)}
                         />
@@ -99,13 +103,13 @@ const DateValidator = () => {
                 </tr>
                 <tr>
                     <td>
-                        <h3>Year: </h3>
+                        <h3>Year </h3>
                     </td>
                     <td style={{display: 'flex', flexWrap: 'wrap'}}>
                         <input
                             style={{width: '100%', padding: '20px'}}
                             type="text"
-                            placeholder="Year"
+                            placeholder="Input Year"
                             value={year}
                             onChange={(e) => setYear(e.target.value)}
                         />
